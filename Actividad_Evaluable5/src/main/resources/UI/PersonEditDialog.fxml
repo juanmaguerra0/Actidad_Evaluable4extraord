@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Importaciones necesarias para los componentes de la interfaz -->
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<!-- Definición del panel principal de tipo AnchorPane con dimensiones y estilos -->
+<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="400" styleClass="background" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <!-- Etiquetas de texto con estilos y posicionamiento -->
+        <Label style="-fx-font-size: 14; -fx-text-fill: #555;" text="First Name" textFill="WHITE" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
+        <Label style="-fx-font-size: 14; -fx-text-fill: #555;" text="Last Name" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="37.0" />
+        <Label style="-fx-font-size: 14; -fx-text-fill: #555;" text="Street" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="64.0" />
+        <Label style="-fx-font-size: 14; -fx-text-fill: #555;" text="City" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="91.0" />
+        <Label style="-fx-font-size: 14; -fx-text-fill: #555;" text="Postal Code" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="118.0" />
+        <Label style="-fx-font-size: 14; -fx-text-fill: #555;" text="Birthday" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="145.0" />
+
+        <!-- Campos de texto con estilos y posicionamiento -->
+        <TextField fx:id="firstNameField" style="-fx-background-radius: 5;" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+        <TextField fx:id="lastNameField" style="-fx-background-radius: 5;" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="37.0" />
+        <TextField fx:id="streetField" style="-fx-background-radius: 5;" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="64.0" />
+        <TextField fx:id="cityField" style="-fx-background-radius: 5;" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="91.0" />
+        <TextField fx:id="postalCodeField" style="-fx-background-radius: 5;" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="118.0" />
+        <TextField fx:id="birthdayField" promptText="dd.mm.yyyy" style="-fx-background-radius: 5;" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="145.0" />
+
+        <!-- Botones con estilos y posicionamiento -->
+        <Button defaultButton="true" layoutX="210" layoutY="180" prefWidth="80" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-background-radius: 5;" text="OK" />
+        <Button cancelButton="true" layoutX="310" layoutY="180" prefWidth="80" style="-fx-background-color: #f44336; -fx-text-fill: white; -fx-background-radius: 5;" text="CANCEL" />
+    </children>
+</AnchorPane>
