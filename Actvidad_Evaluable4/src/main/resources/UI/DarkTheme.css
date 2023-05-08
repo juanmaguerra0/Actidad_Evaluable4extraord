@@ -1,0 +1,161 @@
+/* Establece el color de fondo del elemento con la clase "background" */
+.background {
+    -fx-background-color: #1d1d1d;
+}
+
+/* Establece el estilo de la etiqueta (Label) */
+.label {
+    -fx-font-size: 11pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: white;
+    -fx-opacity: 0.6;
+}
+
+/* Establece el estilo de la etiqueta brillante (Label Bright) */
+.label-bright {
+    -fx-font-size: 11pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: white;
+    -fx-opacity: 1;
+}
+
+/* Establece el estilo de la cabecera de la etiqueta (Label Header) */
+.label-header {
+    -fx-font-size: 32pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: white;
+    -fx-opacity: 1;
+}
+
+/* Establece el estilo de la tabla (TableView) */
+.table-view {
+    -fx-base: #1d1d1d;
+    -fx-control-inner-background: #1d1d1d;
+    -fx-background-color: #1d1d1d;
+    -fx-table-cell-border-color: transparent;
+    -fx-table-header-border-color: transparent;
+    -fx-padding: 5;
+}
+
+/* Establece el estilo del fondo de la cabecera de la columna (Column Header Background) */
+.table-view .column-header-background {
+    -fx-background-color: transparent;
+}
+
+/* Establece el estilo de la cabecera de la columna y del relleno (Column Header and Filler) */
+.table-view .column-header, .table-view .filler {
+    -fx-size: 35;
+    -fx-border-width: 0 0 1 0;
+    -fx-background-color: transparent;
+    -fx-border-color: 
+        transparent
+        transparent
+        derive(-fx-base, 80%) 
+        transparent;
+    -fx-border-insets: 0 10 1 0;
+}
+
+/* Establece el estilo de la etiqueta dentro de la cabecera de la columna */
+.table-view .column-header .label {
+    -fx-font-size: 20pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: white;
+    -fx-alignment: center-left;
+    -fx-opacity: 1;
+}
+
+/* Establece el estilo de la fila de la tabla seleccionada cuando la tabla está enfocada (TableView Focused Row) */
+.table-view:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: -fx-focus-color;
+}
+
+/* Establece el estilo del divisor de SplitPane horizontal */
+.split-pane:horizontal > .split-pane-divider {
+    -fx-border-color: transparent #1d1d1d transparent #1d1d1d;
+    -fx-background-color: transparent, derive(#1d1d1d,20%);
+}
+
+/* Establece el estilo del SplitPane */
+.split-pane {
+    -fx-padding: 1 0 0 0;
+}
+
+/* Establece el estilo de la barra de menú (MenuBar) */
+.menu-bar {
+    -fx-background-color: derive(#1d1d1d,20%);
+}
+
+/* Establece el estilo del menú contextual (ContextMenu) */
+.context-menu {
+    -fx-background-color: derive(#1d1d1d,50%);
+}
+
+/* Establece el estilo de la etiqueta en la barra de menú (MenuBar Label) */
+.menu-bar .label {
+    -fx-font-size: 14pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: white;
+    -fx-opacity: 0.9;
+}
+
+/* Establece el estilo del contenedor izquierdo del menú (Menu Left Container) */
+.menu .left-container {
+	-fx-background-color: black;
+}
+
+/* Establece el estilo del campo de texto (TextField) */
+.text-field {
+    -fx-font-size: 12pt;
+    -fx-font-family: "Segoe UI Semibold";
+}
+
+/* Establece el estilo del botón (Button) con estilo Metro */
+.button {
+    -fx-padding: 5 22 5 22;   
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+    -fx-background-color: #1d1d1d;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 11pt;
+    -fx-text-fill: #d8d8d8;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+/* Establece el estilo del botón cuando se pasa el cursor sobre él (Button Hover) */
+.button:hover {
+    -fx-background-color: #3a3a3a;
+}
+
+/* Establece el estilo del botón cuando se presiona (Button Pressed) */
+.button:pressed, .button:default:hover:pressed {
+  -fx-background-color: white;
+  -fx-text-fill: #1d1d1d;
+}
+
+/* Establece el estilo del botón cuando está enfocado (Button Focused) */
+.button:focused {
+    -fx-border-color: white, white;
+    -fx-border-width: 1, 1;
+    -fx-border-style: solid, segments(1, 1);
+    -fx-border-radius: 0, 0;
+    -fx-border-insets: 1 1 1 1, 0;
+}
+
+/* Establece el estilo del botón cuando está deshabilitado (Button Disabled) */
+.button:disabled, .button:default:disabled {
+    -fx-opacity: 0.4;
+    -fx-background-color: #1d1d1d;
+    -fx-text-fill: white;
+}
+
+/* Establece el estilo del botón por defecto (Default Button) */
+.button:default {
+    -fx-background-color: -fx-focus-color;
+    -fx-text-fill: #ffffff;
+}
+
+/* Establece el estilo del botón por defecto cuando se pasa el cursor sobre él (Default Button Hover) */
+.button:default:hover {
+    -fx-background-color: derive(-fx-focus-color,30%);
+}

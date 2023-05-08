@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="root" prefHeight="400.0" prefWidth="600.0" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+  <top>
+    <MenuBar>
+      <menus>
+        <Menu text="File">
+          <items>
+            <MenuItem text="New" />
+            <MenuItem text="Open" />
+            <MenuItem text="Save" />
+            <MenuItem text="Exit" />
+          </items>
+        </Menu>
+        <Menu text="Edit">
+          <items>
+            <MenuItem text="Undo" />
+            <MenuItem text="Redo" />
+            <MenuItem text="Cut" />
+            <MenuItem text="Copy" />
+            <MenuItem text="Paste" />
+          </items>
+        </Menu>
+        <Menu text="Help" />
+      </menus>
+    </MenuBar>
+  </top>
+</BorderPane>
